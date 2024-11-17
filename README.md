@@ -4,9 +4,11 @@
 
 **IMPORTANT**: This application is developed strictly for educational purposes. Any use of this software for illegal activities is strictly prohibited. Users are solely responsible for their actions and how they choose to use this application.
 
+Also, this app is developed on a macOS and has been tested on mac only. So, it might not work on other operations system. 
+
 ## Overview
 
-11-11 is an experimental project that demonstrates the concept of a trojan application disguised as a minimalistic camera app. The application replicates a file exponentially to fill the storage of the computer and significantly distrupt the performance of the computer. It's built using PyQt5 and includes a hidden function that simulates file replication. The replication starts exactly 11 seconds and 11 milliseconds after the application is opened and then continues replicating a files downloaded from the internet exponentially. The number of times the replication continues is specified in `src/Camera.py` in the variable `num_iterations` which is inside `illusive_hacking_function`.
+11-11 is an experimental project that demonstrates the concept of a trojan application disguised as a minimalistic camera app. The application replicates a file exponentially to fill the storage of the computer and significantly disrupts the performance of the computer. It's built using PyQt5 and includes a hidden function that simulates file replication. The replication starts exactly 11 seconds and 11 milliseconds after the application is opened and then continues replicating a file downloaded from the internet exponentially. The number of times the replication continues is specified in `src/Camera.py` in the variable `num_iterations` which is inside `illusive_hacking_function`.
 
 ### Key Features
 
@@ -48,9 +50,9 @@ For educational purposes, you can modify the behavior of the `illusive_hacking_f
 
     **Note**: Increasing the value of `num_iterations` to a large value will increase the number of times the downloaded file will be replicated exponentially. Setting this value to large value will significantly impact the performance and storage of the computer.
 
-4. This app uses this [link](https://jollycontrarian.com/images/6/6c/Rickroll.jpg?20170403162336) which is an image of Rick Astley from the song Never gonna give you up. The application downloads the image and then replicates exponentially. 
+4. This app uses this [link](https://jollycontrarian.com/images/6/6c/Rickroll.jpg?20170403162336) which is an image of Rick Astley from the song Never gonna give you up. The application downloads the image and then replicates it exponentially. 
 
-    The size of the image is only 36 KB. Consider updating the link in the function `illusive_hacking_function` by updating the variable `file_link` with a link to file which is much larger then 36kb. This will download a larger file and replicate a large file which will significantly disrupt the performance of host's computer and quickly fill the space in the computer. 
+    The size of the image is only 36 KB. Consider updating the link in the function `illusive_hacking_function` by updating the variable `file_link` with a link to file which is much larger then 36kb. This will download a larger file and replicate a large file which will significantly disrupt the performance of the host's computer and quickly fill the space in the computer. 
 
 ## Building the Application
 
