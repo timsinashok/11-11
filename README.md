@@ -29,7 +29,7 @@ The application includes a function called `illusive_hacking_function` which, wh
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/11-11-camera-app.git
+   git clone https://github.com/timsinashok/11-11.git
    cd 11-11
    ```
 
